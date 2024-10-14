@@ -10,6 +10,7 @@ const ticketSchema = new Schema(
     status: { type: String, default: "open" },
     active: { type: Boolean, default: true },
     user: { type: String, required: true },
+    comments: { type: [String], default: [] }, // Asegúrate de que este campo esté presente
   },
   { timestamps: true }
 );

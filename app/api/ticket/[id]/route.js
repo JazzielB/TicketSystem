@@ -1,5 +1,6 @@
 import Ticket from "@/models/Ticket";
 import { NextResponse, nextResponse } from "next/server";
+import { connectMongoDB } from "@/lib/mongodb";
 
 export async function GET(req, { params }) {
   try {
